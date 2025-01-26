@@ -29,7 +29,7 @@ Each row represents a \_\_\_.
 
 ## Exercise 3 - `select()`
 
--   Demo: Make a data frame that only contains the variables `dep_delay` and `arr_delay`.
+-   Make a data frame that only contains the variables `dep_delay` and `arr_delay`.
 
 ```{r}
 #| label: select-vars
@@ -37,7 +37,7 @@ Each row represents a \_\_\_.
 # add code here
 ```
 
--   Demo: Make a data frame that keeps every variable except `dep_delay`.
+-   Make a data frame that keeps every variable except `dep_delay`.
 
 ```{r}
 #| label: exclude-vars
@@ -45,7 +45,7 @@ Each row represents a \_\_\_.
 # add code here
 ```
 
--   Demo: Make a data frame that includes all variables between `year` through `dep_delay` (inclusive). These are all variables that provide information about the departure of each flight.
+-   Make a data frame that includes all variables between `year` through `dep_delay` (inclusive). These are all variables that provide information about the departure of each flight.
 
 ```{r}
 #| label: include-range
@@ -53,7 +53,7 @@ Each row represents a \_\_\_.
 # add code here
 ```
 
--   Demo: Use the `select` helper `contains()` to make a data frame that includes the variables associated with the arrival, i.e., contains the string `"arr\_"` in the name.
+-   Use the `select` helper `contains()` to make a data frame that includes the variables associated with the arrival, i.e., contains the string `"arr\_"` in the name.
 
 ```{r}
 #| label: arr-vars
@@ -63,7 +63,7 @@ Each row represents a \_\_\_.
 
 ## Exercise 4 - `slice()`
 
--   Demo: Display the first five rows of the `flights` data frame.
+-   Display the first five rows of the `flights` data frame.
 
 ```{r}
 #| label: slice
@@ -71,7 +71,7 @@ Each row represents a \_\_\_.
 # add code here
 ```
 
--   Demo: Display the last two rows of the `flights` data frame.
+-   Display the last two rows of the `flights` data frame.
 
 ```{r}
 #| label: last-two
@@ -81,7 +81,7 @@ Each row represents a \_\_\_.
 
 ## Exercise 5 - `arrange()`
 
--   Demo: Let's arrange the data by departure delay, so the flights with the shortest departure delays will be at the top of the data frame.
+-   Let's arrange the data by departure delay, so the flights with the shortest departure delays will be at the top of the data frame.
 
 ```{r}
 #| label: arrange-delays
@@ -93,7 +93,7 @@ Each row represents a \_\_\_.
 
 Add your response here.
 
--   Demo: Arrange the data by descending departure delay, so the flights with the longest departure delays will be at the top.
+-   Arrange the data by descending departure delay, so the flights with the longest departure delays will be at the top.
 
 ```{r}
 #| label: arrange-delays-desc
@@ -111,7 +111,7 @@ Add your response here.
 
 ## Exercise 6 - `filter()`
 
--   Demo: Filter for all rows where the destination airport is RDU.
+-   Filter for all rows where the destination airport is RDU.
 
 ```{r}
 #| label: rdu
@@ -119,7 +119,7 @@ Add your response here.
 # add code here
 ```
 
--   Demo: Filter for all rows where the destination airport is RDU and the arrival delay is less than 0.
+-   Filter for all rows where the destination airport is RDU and the arrival delay is less than 0.
 
 ```{r}
 #| label: rdu-ontime
@@ -161,7 +161,7 @@ flights |>
 
 ## Exercise 7 - `count()`
 
--   Demo: Create a frequency table of the destination locations for flights from New York.
+-   Create a frequency table of the destination locations for flights from New York.
 
 ```{r}
 #| label: count-dest
@@ -169,7 +169,7 @@ flights |>
 # add code here
 ```
 
--   Demo: In which month was there the fewest number of flights? How many flights were there in that month?
+-   In which month was there the fewest number of flights? How many flights were there in that month?
 
 ```{r}
 #| label: count-month
@@ -187,7 +187,7 @@ flights |>
 
 ## Exercise 8 - `mutate()`
 
--   Demo: Convert `air_time` (minutes in the air) to hours and then create a new variable, `mph`, the miles per hour of the flight.
+-   Convert `air_time` (minutes in the air) to hours and then create a new variable, `mph`, the miles per hour of the flight.
 
 ```{r}
 #| label: calculate-mph
@@ -203,7 +203,7 @@ flights |>
 # add code here
 ```
 
--   Demo: Create a new variable, `rdu_bound`, which indicates whether the flight is to RDU or not. Then, for each departure airport (`origin`), calculate what proportion of flights originating from that airport are to RDU.
+-   Create a new variable, `rdu_bound`, which indicates whether the flight is to RDU or not. Then, for each departure airport (`origin`), calculate what proportion of flights originating from that airport are to RDU.
 
 ```{r}
 #| label: rdu-origin-prop
@@ -213,7 +213,7 @@ flights |>
 
 ## Exercise 9 - `summarize()`
 
--   Demo: Find mean arrival delay for all flights.
+-   Find mean arrival delay for all flights.
 
 ```{r}
 #| label: find-arrival-delay
@@ -223,7 +223,7 @@ flights |>
 
 ## Exercise 10 - `group_by()`
 
--   Demo: Find mean arrival delay for for each month.
+-   Find mean arrival delay for for each month.
 
 ```{r}
 #| label: mean-arr-delay-month
